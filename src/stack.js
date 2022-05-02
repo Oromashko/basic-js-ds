@@ -12,7 +12,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * stack.pop(); // undefined
  *
  */
- const { assert } = require('chai');
+ 
 class Stack {
 
   constructor() {
@@ -38,10 +38,3 @@ class Stack {
 module.exports = {
   Stack
 };
-let stack = new Stack();
-stack.push(5);
-stack.push(6);
-stack.push(7);
-assert.strictEqual(stack.peek(), 7);
-    assert.strictEqual(stack.pop(), 7);
-    assert.strictEqual(stack.peek(), 6);
